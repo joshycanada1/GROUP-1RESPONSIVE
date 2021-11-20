@@ -139,8 +139,11 @@ header {
 }
 .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link {
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: normal;
 	color: #000;
+}
+.navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link.active {
+	font-weight: 600;
 }
 
 .masthead .featues-single h5,
@@ -326,7 +329,10 @@ header {
 }
 .experience-section {
 	background: #e8e8e8;
-	padding: 40px;
+	padding: 40px 0px;
+}
+.experience-section h4 {
+	text-align: left;
 }
 .designation-section img {
 	max-width: 200px;
@@ -336,6 +342,33 @@ header {
 	font-size: 28px;
 	font-weight: 600;
 	margin-bottom: 10px;
+}
+
+/* PROJECTS */
+.projects {
+	padding-top: 200px;
+}
+.projects .head {
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+.projects .sub-head {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 26px;
+	color: #494949;
+}
+.read-more {
+	font-size: 16px;
+	margin: 5px 0px;
+}
+.pr-b {
+	border-bottom: 1px solid #808080;
+}
+.other-projects .img-fluid {
+	width: 100%;
+	margin-bottom: 25px;
 }
 
 @media (max-width: 991px) {
@@ -363,6 +396,9 @@ header {
 	}
 	.footer {
 		padding: 20px 0px;
+	}
+	.pt-70 {
+		padding-top: 0px;
 	}
 }
 
